@@ -1,0 +1,9 @@
+package spring_demo_one;
+
+public class BaseBallCoach {
+
+	
+	public void getDailyWorkout() {
+		System.out.println("30 min of workout daily");
+	}
+}

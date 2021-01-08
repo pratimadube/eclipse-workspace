@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.management.MBeanServerFactory"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.xml.XmlBeanFactory"/>
+    <fullyQualifiedTypeName name="org.springframework.core.io.FileSystemResource"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="mypro1.Springmvn.Triangle"/>
+    <fullyQualifiedTypeName name="spring_demo_one.BaseBallCoach"/>
+    <fullyQualifiedTypeName name="spring_demo_one.HappyFortuneService"/>
+    <fullyQualifiedTypeName name="spring_demo_one.Coach"/>
+    <fullyQualifiedTypeName name="spring_demo_one.FortunService"/>
+    <fullyQualifiedTypeName name="spring_demo_one.CricketCoach"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="com.luv2code.annotationdemo.Coach"/>
+    <fullyQualifiedTypeName name="com.luv2code.annotationdemo.FortuneService"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="com.luv2code.annotationdemo.TennisCoach"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+</qualifiedTypeNameHistroy>

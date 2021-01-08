@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+
+	<!-- <bean id="myLoggerConfig" class="spring_demo_one.MyLoggerConfig" init-method="initLogger"> 
+		<property name="rootLoggerLevel" value="FINE" /> <property name="printedLoggerLevel" 
+		value="FINE" /> </bean> -->
+		<!-- read literals values from properties file. -->
+	<context:property-placeholder location="classpath:sport.properties"/>
+	<bean id="myHappyServices" class="spring_demo_one.HappyFortuneService"/>
+
+	<bean id="cricketcoach" class="spring_demo_one.CricketCoach">
+		<!-- setter injection -->
+		<property name="fortuneService" ref="myHappyServices"></property>
+		<!-- Inject literal values -->
+		<!-- <property name="email" value="pratima@gmail.com"></property>
+		<property name="teamname" value="HappyTeam"></property> -->
+		
+		<!-- read literals values from properties file. -->
+		<property name="email" value="${foo.email}"/>
+		<property name="teamname" value="${foo.teamname}"/>
+	</bean>
+
+	<bean id="myCoach" class="spring_demo_one.TrackCoach">
+		<!-- Constructor injection -->
+		<constructor-arg ref="myHappyServices" />
+	</bean>
+
+
+
+
+</beans>

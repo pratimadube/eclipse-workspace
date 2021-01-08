@@ -1,0 +1,7 @@
+127.0.0.1 - - [09/Dec/2020:13:54:41 +0530] "GET / HTTP/1.1" 404 1036
+0:0:0:0:0:0:0:1 - - [09/Dec/2020:13:54:42 +0530] "GET /MySpringMvcWithAnnotation/ HTTP/1.1" 404 1062
+127.0.0.1 - - [09/Dec/2020:14:01:18 +0530] "GET / HTTP/1.1" 404 1036
+0:0:0:0:0:0:0:1 - - [09/Dec/2020:14:01:18 +0530] "GET /MySpringMvcWithAnnotation/ HTTP/1.1" 404 1062
+127.0.0.1 - - [09/Dec/2020:14:06:18 +0530] "GET / HTTP/1.1" 404 1036
+0:0:0:0:0:0:0:1 - - [09/Dec/2020:14:06:19 +0530] "GET /MySpringMvcWithAnnotation/ HTTP/1.1" 200 120
+0:0:0:0:0:0:0:1 - - [09/Dec/2020:14:06:26 +0530] "GET /MySpringMvcWithAnnotation/addproducts HTTP/1.1" 404 1073
