@@ -6,27 +6,32 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SwimCoach implements Coach{
+public class SwimCoach implements Coach {
 
 	@Value("${foo.email}")
 	private String email;
 	@Value("${foo.teamname}")
 	private String Team;
-	
+
 	@Autowired
-	@Qualifier("randomFortuneService")
-	private FortuneService FortuneService;
-	
+	@Qualifier("sadFortuneService")
+	private FortuneService fortuneService;
+
+	public SwimCoach(FortuneService sadFortuneService) {
+		// TODO Auto-generated constructor stub
+		fortuneService = sadFortuneService;
+	}
+
 	@Override
 	public String getDailyWorkout() {
 		// TODO Auto-generated method stub
-		return "Play As you wish";
+		return "Swim 1000 meters as a workout";
 	}
+
 	@Override
 	public String getDailyFortune() {
 		// TODO Auto-generated method stub
-		return FortuneService.getFortune();
+		return fortuneService.getFortune();
 	}
-	
-	
+
 }
